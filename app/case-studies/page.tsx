@@ -1,28 +1,41 @@
+// components/CaseStudiesSection.tsx
 "use client"
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { ArrowRight } from "lucide-react"
 import ModalForm from "@/components/ui/modal-form"
 
-// Example static case studies data
+// Updated case studies data
 const caseStudies = [
   {
     title: "Modern E-Commerce Website",
     description: "A fully responsive online store optimized for performance, conversion, and user experience.",
-    image: "/public/modern-ecommerce-website.png",
+    image: "/modern-ecommerce-website.png", // remove /public from path
     course: "E-Commerce Project",
   },
   {
     title: "Student Portfolio Platform",
-    description: "A custom portfolio platform for students to showcase their projects and skills effectively.",
-    image: "/public/student-portfolio-website.jpg",
+    description: "A custom portfolio platform for students to showcase projects and skills effectively.",
+    image: "/student-portfolio-website.jpg",
     course: "Portfolio Project",
   },
   {
     title: "SEO Analytics Dashboard",
     description: "A data-driven SEO analytics dashboard to monitor website performance and rankings.",
-    image: "/public/seo-analytics-dashboard.png",
+    image: "/seo-analytics-dashboard.png",
     course: "SEO Project",
+  },
+  {
+    title: "UI/UX Redesign for Startup",
+    description: "Revamped an existing website to improve user engagement and conversion rate.",
+    image: "/ui-ux-redesign.png",
+    course: "UI/UX Project",
+  },
+  {
+    title: "Marketing Analytics Tool",
+    description: "Developed a dashboard to track campaigns, traffic, and ROI with real-time analytics.",
+    image: "/marketing-analytics-tool.png",
+    course: "Analytics Project",
   },
 ]
 
@@ -33,7 +46,7 @@ export function CaseStudiesSection() {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 font-serif">Case Studies</h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto text-pretty leading-relaxed">
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Explore some of our recent projects and see how we deliver results that elevate businesses and digital skills.
           </p>
         </div>
