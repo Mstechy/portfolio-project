@@ -39,7 +39,7 @@ const caseStudies = [
   },
 ]
 
-export function CaseStudiesSection() {
+export default function CaseStudiesSection() {
   return (
     <section id="case-studies" className="py-24 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
